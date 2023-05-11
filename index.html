@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <div class="general">
+    <div class="step">
+      <div class="one">1</div>
+      <div class="one">2</div>
+      <div class="one">3</div>
+      <div class="one">4</div>
+    </div>
+    <div class="info">
+      <div class="stepplan">
+        <div class="stepsinvolved">STEP 1</div>
+        <div class="plans">YOUR INFO</div>
+      </div>
+      <div class="stepplan">
+        <div class="stepsinvolved">STEP 2</div>
+        <div class="plans">SELECT PLAN</div>
+      </div>
+      <div class="stepplan">
+        <div class="stepsinvolved">STEP 3</div>
+        <div class="plans">ADD-ONS</div>  
+      </div>
+      <div class="stepplan">
+        <div class="stepsinvolved">STEP 4</div>
+        <div class="plans">SUMMARY</div> 
+      </div>
+    </div>
+    <div class="personal exams">
+      <div class="person">
+        <h1>Personal info</h1>
+        <p id="beg">Please provide your name, email address, and phone number.</p>
+      </div>
+      <form>
+        <label for="form-name" class="design">Name</label>
+        <input type="text" id="form-name" placeholder="e.g. Stephen King" >
+        
+        <label for="form-email" class="design">Email Address</label>
+        <input type="email" id="form-email" placeholder="e.g. stephenking@lorem.com">
+
+        <label for="form-phone" class="design">Phone Number</label>
+        <input type="tel" id="form-phone" placeholder="e.g. +1 234 567 890">
+
+        <div class="bottomm">
+          <input type="submit"  value="Next step" class="nextstep">
+        </div>
+      </form>
+    </div>
+    <div class="personal arcade">
+      <div class="person">
+        <h1>Select your plan</h1>
+        <p id="beg">You have the option of monthly or yearly billing.</p>
+        <div class="advance">
+          <div class="pro">
+            <div class="month">
+              <img src="/assets/images/icon-arcade.svg " alt="" class="reduceimaage">
+              <div class="slash">
+                <div class="arcas">Arcade</div>
+                <div class="monthslash">$9/mo</div>
+                <div class="monthslash monthslashtwo mum">$90/yr</div>
+                <div class="newest mum">2 months free</div>
+              </div>
+            </div>
+            <div class="month">
+              <img src="/assets/images/icon-advanced.svg " alt=""  class="reduceimaage">
+              <div class="slash">
+                <div class="arcas">Advance</div>
+                <div class="monthslash">$12/mo</div>
+                <div class="monthslash monthslashtwo mum">$120/yr</div>
+                <div class="newest mum">2 months free</div>
+              </div>
+            </div>
+            <div class="month">
+              <img src="/assets/images/icon-pro.svg " alt="" class="reduceimaage">
+              <div class="slash">
+                <div class="arcas">Pro</div>
+                <div class="monthslash">$15/mo</div>
+                <div class="monthslash monthslashtwo mum">$150/yr</div>
+                <div class="newest mum">2 months free</div>
+              </div>
+            </div>
+          </div>
+          <div class="monthly">
+            <div class="mon">Monthly</div>
+            <div class="mov"><div class="inner"></div></div>
+            <div class="yea">Yearly</div>
+          </div>
+        </div>
+        <div class="bottomm forarcade">
+          <span class="spanner">Go Back</span>
+          <input type="submit"  value="Next step" class="nextstep">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
